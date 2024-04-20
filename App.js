@@ -2,7 +2,7 @@
 
 import React from 'react';
 import {
-  View, Text
+  View, Text,Image
 
 } from 'react-native';
 
@@ -16,10 +16,15 @@ const App = () => {
 
 
   return (
-    <View>
-      <Text style={{fontSize:30}}>
-        HAMLA The Attack Mode app
-      </Text>
+    <View style={{
+      backgroundColor: 'black',
+      height: '100%',
+    }}>
+      <Image source={require('./assets/bg.png')} style={{
+        width: '100%',
+        height: '70%',
+      }} />
+
     </View>
     
   );
